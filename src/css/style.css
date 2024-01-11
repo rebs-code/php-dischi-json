@@ -2,6 +2,23 @@
   display: none;
 }
 
+header {
+  background-color: #06131f;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+body {
+  background-color: #1d2d3c;
+}
+
 .album-card {
   max-width: calc(100% / 3 - 30px);
+  margin: 15px;
+  padding: 15px;
+  color: #fff;
+  background-color: #112030;
 }

@@ -14,7 +14,7 @@
 <body>
     <div id="app">
         <header>
-            <h1>Albums</h1>
+            <h1>Albums PHP</h1>
         </header>
         <main>
             <div class="container d-flex flex-wrap album-container justify-content-between">
