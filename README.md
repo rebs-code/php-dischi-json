@@ -19,4 +19,4 @@ The PHP backend serves a list of music albums. The Vue.js frontend makes an HTTP
 
 When a card is clicked, the selected album is displayed in a popup overlay. The overlay can be closed by clicking anywhere on the screen.
 
-![Landing page view](image.png)
+![Landing page view](./src/img/screenshot.png)
