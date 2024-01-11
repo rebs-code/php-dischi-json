@@ -49,4 +49,14 @@ createApp({
       ],
     };
   },
+  methods: {
+    getAlbums() {
+      axios.get("server.php").then((response) => {
+        console.log(response);
+      });
+    },
+  },
+  created() {
+    this.getAlbums();
+  },
 }).mount("#app");
