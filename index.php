@@ -18,11 +18,19 @@
         </header>
         <main>
             <div class="container d-flex flex-wrap album-container justify-content-between">
-                <div v-for="album in albums" v-cloak class="card album-card">
+                <div v-for="album in albums" v-cloak class="card album-card" @click="selectedAlbum = album">
                     <img :src="album.cover" alt="album.title">
-                    <h2>{{album.title}}</h2>
+                    <h2 class="mt-2">{{album.title}}</h2>
                     <h4>{{album.artist}}</h4>
                     <p>{{album.year}}</p>
+                </div>
+            </div>
+            <div v-if="selectedAlbum" class="overlay" @click="selectedAlbum = null">
+                <div class="album-card">
+                    <img :src="selectedAlbum.cover" alt="selectedAlbum.title">
+                    <h2 class="mt-2">{{selectedAlbum.title}}</h2>
+                    <h4>{{selectedAlbum.artist}}</h4>
+                    <p>{{selectedAlbum.year}}</p>
                 </div>
             </div>
 
