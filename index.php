@@ -10,6 +10,8 @@
 <body>
     <!-- vue cdn -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </body>
 
 </html>
