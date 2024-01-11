@@ -1,15 +1,22 @@
 # Displaying Music Album with PHP
 
-Descrizione
-Dobbiamo creare una web-app che permetta di leggere una lista di dischi presente nel nostro server.
-Stack
+This project is a simple web application that displays music albums. It uses Vue.js for the frontend, PHP for the backend, and Axios for making HTTP requests.
 
-Html, CSS, VueJS (importato tramite CDN), axios, PHP
+## Technologies Used
 
-Consigli
-Nello svolgere l’esercizio seguite un approccio graduale.
-Prima assicuratevi che la vostra pagina index.php (il vostro front-end) riesca a comunicare correttamente con il vostro script PHP (le vostre “API”).
-Solo a questo punto sarà utile passare alla lettura della lista da un file JSON.
+- **Vue.js**
+- **PHP**
+- **Axios**
 
-Bonus
-Al click su un disco, recuperare e mostrare i dati del disco selezionato.
+## Features
+
+- Display a list of music albums.
+- Click on an album to view more details in a popup overlay.
+
+## How It Works
+
+The PHP backend serves a list of music albums. The Vue.js frontend makes an HTTP GET request to the backend using Axios. The response is an array of album objects, which Vue.js then renders as a list of cards.
+
+When a card is clicked, the selected album is displayed in a popup overlay. The overlay can be closed by clicking anywhere on the screen.
+
+![Landing page view](image.png)
